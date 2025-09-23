@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio VFX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rey – FX Artist Showreel</title>
+  <link rel="icon" href="favicon.ico" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/dist/lenis.min.js"></script>
+
   <style>
     .project-card:hover video {
       transform: scale(1.05);
@@ -13,23 +16,36 @@
 </head>
 <body class="bg-black text-white font-sans">
 
-  <!-- Hero Section -->
-  <section class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+  <!-- Hero Section (video background) -->
+  <header class="relative h-screen w-full overflow-hidden flex items-center justify-center">
     <video autoplay loop muted playsinline class="absolute w-full h-full object-cover">
       <source src="assets/video/hero.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
+      Your
     </video>
-    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="absolute inset-0 bg-black/70"></div>
     <div class="relative z-10 text-center px-4">
-      <h1 class="text-5xl md:text-7xl font-extrabold tracking-wide">My VFX Portfolio</h1>
-      <p class="mt-4 text-lg md:text-2xl text-gray-300">Film • Commercial • Series</p>
-      <a href="#projects" class="mt-8 inline-block bg-red-600 hover:bg-red-700 px-8 py-3 rounded-lg font-semibold">Explore Work</a>
+      <h1 class="text-5xl md:text-7xl font-extrabold ">Hi, I'm <span class="text-red-500 drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]">Reyqyulangie Didik</span></h1>
+      <p class="mt-4 text-xl">VFX & Comp Artist</p>
+      <p class="mt-2 text-gray-300">Unreal Engine · Houdini · Nuke · Blender · Fusion · Maya</p>  
+      <div class="mt-8 space-x-4">
+        <a href="#showreel" class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg font-semibold">🎬 Watch Showreel</a>
+        <a href="assets/CV.pdf" target="_blank" class="border border-red-600 px-6 py-3 rounded-lg font-semibold hover:bg-red-600/20">📄 Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Showreel -->
+  <section id="showreel" class="py-20 max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-8">Showreel</h2>
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe class="w-full h-[500px] rounded-lg shadow-xl"
+        src="https://www.youtube.com/embed/0aDW9PFu3QE" frameborder="0" allowfullscreen></iframe>
     </div>
   </section>
 
-  <!-- Projects Showcase -->
+  <!-- Showcase Projects -->
   <section id="projects" class="py-20 max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-12 text-center">Showcase Projects</h2>
+    <h2 class="text-3xl font-bold text-center mb-12">More Projects</h2>
     <div class="grid md:grid-cols-3 gap-6">
       <!-- Project Card -->
       <div class="relative overflow-hidden rounded-xl shadow-lg project-card">
@@ -37,7 +53,7 @@
           <source src="assets/video/project1.mp4" type="video/mp4" />
         </video>
         <div class="absolute inset-0 bg-black/60 opacity-0 hover:opacity-100 flex items-center justify-center transition duration-300">
-          <span class="text-xl font-bold">Project 1</span>
+          <span class="text-xl font-bold">Milku - Back to School</span>
         </div>
       </div>
       <!-- Project Card -->
@@ -46,7 +62,7 @@
           <source src="assets/video/project2.mp4" type="video/mp4" />
         </video>
         <div class="absolute inset-0 bg-black/60 opacity-0 hover:opacity-100 flex items-center justify-center transition duration-300">
-          <span class="text-xl font-bold">Project 2</span>
+          <span class="text-xl font-bold">Milku - Skateboard</span>
         </div>
       </div>
       <!-- Project Card -->
@@ -55,15 +71,67 @@
           <source src="assets/video/project3.mp4" type="video/mp4" />
         </video>
         <div class="absolute inset-0 bg-black/60 opacity-0 hover:opacity-100 flex items-center justify-center transition duration-300">
-          <span class="text-xl font-bold">Project 3</span>
+          <span class="text-xl font-bold">SERES 3</span>
         </div>
       </div>
-      <!-- Tambah project lain -->
+      <!-- Project Card -->
+      <div class="relative overflow-hidden rounded-xl shadow-lg project-card">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover transition-transform duration-500">
+          <source src="assets/video/project4.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 bg-black/60 opacity-0 hover:opacity-100 flex items-center justify-center transition duration-300">
+          <span class="text-xl font-bold">Fotile Menyala</span>
+        </div>
+      </div>
+      <!-- Project Card -->
+      <div class="relative overflow-hidden rounded-xl shadow-lg project-card">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover transition-transform duration-500">
+          <source src="assets/video/project5.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 bg-black/60 opacity-0 hover:opacity-100 flex items-center justify-center transition duration-300">
+          <span class="text-xl font-bold">Kapsul Waktu</span>
+        </div>
+      </div>
+      <!-- Project Card -->
+      <div class="relative overflow-hidden rounded-xl shadow-lg project-card">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover transition-transform duration-500">
+          <source src="assets/video/project6.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 bg-black/60 opacity-0 hover:opacity-100 flex items-center justify-center transition duration-300">
+          <span class="text-xl font-bold">Warnada - Chinese New Year</span>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- About -->
+  <section id="about" class="py-20 max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p class="text-gray-300 leading-relaxed">
+      Aspiring and skilled Visual Effects Artist with a specialization in animation from SMK Raden Umar Said,
+      and hands-on experience in stylized and procedural VFX for animated series. With more than one year of experience,
+      I have developed a strong foundation in tools such as Houdini FX, Unreal Engine, Nuke, Fusion, Maya and Blender,
+      and have been entrusted to create and optimize VFX assets in various productions. I am particularly interested in
+      enhancing FX pipelines for real-time and animated storytelling, and contributing both creative and technical
+      solutions in a collaborative production environment.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 max-w-3xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact</h2>
+    <div class="space-x-6 mb-6">
+      <a href="https://linkedin.com/in/reyqyulangied" target="_blank" class="hover:text-red-400">LinkedIn</a>
+      <a href="https://instagram.com/apprdp" target="_blank" class="hover:text-red-400">Instagram</a>
+      <a href="https://facebook.com/reyqyulangie.didik" target="_blank" class="hover:text-red-400">Facebook</a>
+    </div>
+    <p>Email: <a href="mailto:reyqyulangied@gmail.com" class="text-red-400 hover:underline">reyqyulangied@gmail.com</a></p>
+  </section>
+
   <footer class="py-6 bg-black text-center text-gray-500">
-    © 2025 My Portfolio. All rights reserved.
+    &copy; 2025 Reyqyulangie Didik
   </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
