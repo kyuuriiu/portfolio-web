@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio VFX</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .project-card:hover video {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Hero Section -->
+  <section class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+    <video autoplay loop muted playsinline class="absolute w-full h-full object-cover">
+      <source src="assets/video/hero.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 text-center px-4">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-wide">My VFX Portfolio</h1>
+      <p class="mt-4 text-lg md:text-2xl text-gray-300">Film • Commercial • Series</p>
+      <a href="#projects" class="mt-8 inline-block bg-red-600 hover:bg-red-700 px-8 py-3 rounded-lg font-semibold">Explore Work</a>
+    </div>
+  </section>
+
+  <!-- Projects Showcase -->
+  <section id="projects" class="py-20 max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-12 text-center">Showcase Projects</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Project Card -->
+      <div class="relative overflow-hidden rounded-xl shadow-lg project-card">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover transition-transform duration-500">
+          <source src="assets/video/project1.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 bg-black/60 opacity-0 hover:opacity-100 flex items-center justify-center transition duration-300">
+          <span class="text-xl font-bold">Project 1</span>
+        </div>
+      </div>
+      <!-- Project Card -->
+      <div class="relative overflow-hidden rounded-xl shadow-lg project-card">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover transition-transform duration-500">
+          <source src="assets/video/project2.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 bg-black/60 opacity-0 hover:opacity-100 flex items-center justify-center transition duration-300">
+          <span class="text-xl font-bold">Project 2</span>
+        </div>
+      </div>
+      <!-- Project Card -->
+      <div class="relative overflow-hidden rounded-xl shadow-lg project-card">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover transition-transform duration-500">
+          <source src="assets/video/project3.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 bg-black/60 opacity-0 hover:opacity-100 flex items-center justify-center transition duration-300">
+          <span class="text-xl font-bold">Project 3</span>
+        </div>
+      </div>
+      <!-- Tambah project lain -->
+    </div>
+  </section>
+
+  <footer class="py-6 bg-black text-center text-gray-500">
+    © 2025 My Portfolio. All rights reserved.
+  </footer>
+</body>
+</html>
